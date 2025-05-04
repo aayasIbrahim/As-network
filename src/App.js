@@ -1,12 +1,24 @@
-
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import './App.css';
+import Login from './pages/Login';
 
 function App() {
   return (
-   <div className="mx-auto max-w-4xl p-4 text-center">
-    ayas
-   </div>
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/login" element={<Login/>} />
+  
+  
+   </Routes>
+
   );
 }
 
 export default App;
+
+
+// or
+
+
