@@ -1,4 +1,5 @@
 import React from 'react'
+import NavButton from './NavButton';
 
 function MobileMenu() {
   return (
@@ -18,8 +19,9 @@ function MobileMenu() {
                     </div>
                 </ul>
                 <div className='flex justify-center items-center space-x-6 mt-5 mb-5'>
-                 <button className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 whitespace-nowrap">Quick Pay</button>
-                 <button className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 whitespace-nowrap">Safe Care</button>
+                  <NavButton>Quick Pay</NavButton>
+                  <NavButton>Safe Care</NavButton>
+            
                  
                    
                 

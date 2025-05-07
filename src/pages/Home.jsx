@@ -3,7 +3,7 @@ import NavBer from '../componets/NavBer'
 
 function Home() {
   return (
-    <div >
+    <div className="" >
     
         <NavBer/>
 

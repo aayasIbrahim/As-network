@@ -1,19 +1,12 @@
-import React,{useState} from 'react'
+
 import { IoIosSunny } from "react-icons/io";
 import { MdOutlineMenu } from "react-icons/md";
 import { MdCancel } from "react-icons/md";
 import { FaMoon } from "react-icons/fa6";
 import MobileMenu from './MobileMenu';
 
-function NavMobileView() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    }
+function NavMobileView({toggleDarkMode,darkMode,toggleMenu,isOpen}) {
+ 
   return (
    <>
        <div>
