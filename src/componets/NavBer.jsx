@@ -5,18 +5,17 @@ import { IoIosSunny } from "react-icons/io";
 import ASNetworkLogo from './AsneworkLogo';
 import NavMobileView from './Nav/NavMobileView';
 import NavButton from './Nav/NavButton';
+import { useTheme } from '../context/ThemeContext';
 
 function NavBer() {
-     const [darkMode, setDarkMode] = useState(true);
+  
        const [isOpen, setIsOpen] = useState(false);
+       const { theme,toggleTheme } = useTheme();
    
        const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    }
-
+  
     const navItems = ['Home', 'About', 'Offer', 'Coverge', 'Pricing','Pay Bill'];
   return (
     <nav className='navbar fixed w-full z-50 top-0 pt-0 lg:pb-1.5 md:pb-1.5 pb-0 lg:rounded-none md:rounded-none rounded-b-xl lg:border-none md:border-none border-b border-gray-700 lg:bg-[#00204f57] md:bg-[#00204f57] bg-[#00204fc1] dark:lg:bg-[#00204f57] dark:md:bg-[#00204f57] dark:bg-[#00204fc1]'>
@@ -26,10 +25,12 @@ function NavBer() {
             </div>
              <div className='md:hidden'>
               <NavMobileView
-              toggleDarkMode={toggleDarkMode}
-              darkMode={darkMode}
+            
+          
               toggleMenu={toggleMenu}
               isOpen={isOpen}
+              theme={theme}
+              toggleTheme={toggleTheme}
               />
              </div>
              <ul className='hidden md:flex lg:flex justify-center items-center'>
@@ -38,9 +39,9 @@ function NavBer() {
               })}
              </ul>
              <div className='hidden md:flex lg:flex justify-center items-center space-x-6'>
-<button onClick={toggleDarkMode} className="  w-8 h-8 bg-gray-100 rounded-lg dark:bg-slate-800  items-center justify-center 
+<button onClick={toggleTheme} className="  w-8 h-8 bg-gray-100 rounded-lg dark:bg-slate-800  items-center justify-center 
           transition-all duration-300 focus:outline-none">
-        {darkMode ?<FaMoon size={20} className="mx-auto text-gray-500" />  :<IoIosSunny size={20} className="mx-auto " />}
+        {theme==="light"?<FaMoon size={20} className="mx-auto text-gray-500" />  :<IoIosSunny size={20} className="text-white mx-auto " />}
            </button>   
            <NavButton>Quick Pay</NavButton>          
            <NavButton>Safe Care</NavButton>          

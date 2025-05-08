@@ -8,7 +8,7 @@ const ASNetworkLogo = () => {
   
         {/* Logo Text */}
         <span className="tracking-wide font-bold text-blue-600 ">
-          <span className="text-white text-[17px]">AS</span>
+          <span className="text-white text-[17px] dark:text-black">AS</span>
           <span className="text-white text-2xl">Network</span>
         </span>
       </div>
