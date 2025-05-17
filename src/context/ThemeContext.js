@@ -8,6 +8,7 @@ export const ThemeProvider = ({children})=>{
     const [theme,setTheme]=useState(()=>{
         return localStorage.getItem("theme")||'light'
     })
+    //localstorage must be use useEffect
     useEffect(()=>{
         const root=window.document.documentElement;
         if(theme==="dark"){
@@ -15,7 +16,7 @@ export const ThemeProvider = ({children})=>{
         }else{
             root.classList.remove("dark")
         }
-        localStorage.getItem("theme",theme)
+        localStorage.getItem("theme") //localstorage them re save korlam
     },[theme])
     const toggleTheme=()=>{
         setTheme((prev)=>(prev==="light"?"dark":"light"))

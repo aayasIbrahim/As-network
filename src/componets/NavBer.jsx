@@ -26,7 +26,7 @@ function NavBer() {
              <div className='md:hidden'>
               <NavMobileView
             
-          
+                                            // 
               toggleMenu={toggleMenu}
               isOpen={isOpen}
               theme={theme}
@@ -35,7 +35,7 @@ function NavBer() {
              </div>
              <ul className='hidden md:flex lg:flex justify-center items-center'>
               {navItems.map((item,index)=>{
-                return <li className={`${item ==="Offer"? "rounded-lg lg:px-1 md:px-0 px-0 lg:border text-base font-medium text-gray-200 hover:text-gray-400 lg:border-gray-500 lg:dark:border-gray-500  dark:text-gray-200 dark:hover:text-gray-100": ""}`} key={index}><a className="font-base font-medium text-gray-200 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-100 flex   m-4 " href="/jh"> {item}   {item === "Offer" &&  <span className=" bg-red-600 h-5 w-5 rounded-full px-1.5 py-0.5 text-white text-xs ">1</span>}</a></li>
+                return <li className={`${item ==="Offer" && "rounded-lg lg:px-1 md:px-0 px-0 lg:border text-base font-medium text-gray-200 hover:text-gray-400 lg:border-gray-500 lg:dark:border-gray-500  dark:text-gray-200 dark:hover:text-gray-100"}`} key={index}><a className="font-base font-medium text-gray-200 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-100 flex   m-4 " href="/jh"> {item}   {item === "Offer" &&  <span className=" bg-red-600 h-5 w-5 rounded-full px-1.5 py-0.5 text-white text-xs ">1</span>}</a></li>
               })}
              </ul>
              <div className='hidden md:flex lg:flex justify-center items-center space-x-6'>

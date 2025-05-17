@@ -14,10 +14,10 @@ function NavMobileView({toggleMenu,isOpen}) {
   return (
    <>
        <div>
-          <div className='flex justify-center item-center space-x-3 md:hidden md:flex space-x-4'>
+          <div className='flex justify-center item-center space-x-3 md:hidden md:flex space-x-4 '>
           <button onClick={toggleTheme} className=" w-8 h-8 bg-gray-100 rounded-lg dark:bg-slate-800  items-center justify-center 
           transition-all duration-300 focus:outline-none">
-        {theme==='light'?<FaMoon size={18} className="mx-auto text-gray-500" />  :<IoIosSunny size={18} className="mx-auto text-white" />}
+        {theme==='light'? <FaMoon size={18} className="mx-auto text-gray-500" />  :<IoIosSunny size={18} className="mx-auto text-white" />}
         
            </button>
        
