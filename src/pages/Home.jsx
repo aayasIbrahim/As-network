@@ -5,7 +5,7 @@ import MySwiper from "../componets/slider/MySwiper";
 
 function Home() {
   return (
-    <div className="bg-gray-900 dark:bg-gray-800 ">
+    <div className="dark:bg-gray-800 ">
       <NavBer />
      <div >
        <MySwiper/>
