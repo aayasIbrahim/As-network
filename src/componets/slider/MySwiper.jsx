@@ -10,6 +10,7 @@ import IMg1 from '../../assets/img1.jpg';
 import IMg2 from '../../assets/slide-2.png';
 import IMg3 from '../../assets/slide-3.jpg';
 import IMg4 from '../../assets/slide-4.jpg';
+import IMg5 from '../../assets/slide-5.jpg';
 import 'swiper/css/autoplay';
 // import required modules
 import { EffectCards,Autoplay } from 'swiper/modules';
@@ -45,7 +46,7 @@ function MySwiper() {
           disableOnInteraction: false,
         }}
         speed={1500}
-        className=" w-[380px] top-[40px]  md:w-[540px] md:h-[640px] lg:w-[640px] lg:h-[740px]  rounded-lg shadow-lg"
+        className=" w-[380px] top-[40px]  md:w-[540px] md:h-[640px] lg:w-[640px] lg:h-[740px]  "
       >
            
           <SwiperSlide className= "flex items-center justify-center rounded-lg shadow-lg bg-blue-950">
@@ -56,13 +57,13 @@ function MySwiper() {
                সংযোগের অভিজ্ঞতা নিন
               </h2>
                <div className='mt-[60px] mb-[90px]'>
-                  <a href="/" className='  text-white rounded-xl  px-3 py-1 mx-3 my-1 bg-blue-800 '>See all packages</a>
+                  <a href="/" className='  text-white rounded-xl  px-6 py-2 mx-3 my-1 bg-blue-800 hover:bg-blue-700 transition border border-white'>See all packages</a>
 
                  </div>             
             </div>
           </SwiperSlide>
        
-          <SwiperSlide className= "flex items-center justify-center rounded-lg shadow-lg bg-blue-900">
+          <SwiperSlide className= "flex items-center justify-center rounded-lg  bg-blue-900">
             <div className="flex flex-col  justify-center items-center">
               <img src={IMg1} className='w-[160PX] mt-3' alt="imag" />
               <h2 className="text-gray-300 text-xl font-bold text-center p-2 mt-9 mb-2">কেন আপনি <span className='text-cyan-200'>ASNetwork</span> ব্যবহার করবেন ?</h2>
@@ -83,7 +84,7 @@ function MySwiper() {
        
           <SwiperSlide className= "flex items-center justify-center rounded-lg shadow-xl bg-black">
             <div className="flex flex-col justify-center items-center">
-              <img src={IMg3} className='w-[200PX] mt-[50px] mb-[50px]' alt="imag" />
+              <img src={IMg3} className='mix-blend-screen w-[200PX] mt-[50px] mb-[50px]' alt="imag" />
               <h2 className="text-gray-100 text-xl font-bold text-center ">বাড়তি খরচ ছাড়াই  আপনার
                <span className='text-blue-700'> ইন্টারনেট বিল </span>
                 পরিশোধ করুন
@@ -91,6 +92,19 @@ function MySwiper() {
                <div className='mt-[50px] mb-[70px]'>
                   <img src={IMg4} alt="" className='w-[250px]'/>
 
+                 </div>             
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className= "flex items-center justify-center rounded-lg shadow-xl bg-blue-500">
+            <div className="flex flex-col justify-center items-center">
+              <img src={IMg5} className=' mix-blend-screen w-[200PX] mt-[50px] mb-[50px]' alt="imag" />
+              <h2 className="text-slate-50 text-2xl font-bold text-center ">
+               <span className='text-black'> IPv6  </span>
+              READY Connecting  the World
+              </h2>
+               <div className='mt-[70px] mb-[140px]'>
+        
+                           <a href="/" className='  text-white font-medium rounded-lg  px-6 py-2 mx-3 my-1 bg-teal-600 border border-white hover:bg-teal-700 transition '>Get a Connection</a>
                  </div>             
             </div>
           </SwiperSlide>
