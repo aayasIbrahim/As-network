@@ -40,10 +40,10 @@ function MySwiper() {
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards,Autoplay]}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         speed={1500}
         className=" w-[380px] top-[40px]  md:w-[540px] md:h-[640px] lg:w-[640px] lg:h-[740px]  rounded-lg shadow-lg"
       >
@@ -55,7 +55,7 @@ function MySwiper() {
                সাথে <span className='text-blue-400'>নিরবচ্ছিন্ন ইন্টারনেট </span>
                সংযোগের অভিজ্ঞতা নিন
               </h2>
-               <div className='mt-[60px] mb-[70px]'>
+               <div className='mt-[60px] mb-[90px]'>
                   <a href="/" className='  text-white rounded-xl  px-3 py-1 mx-3 my-1 bg-blue-800 '>See all packages</a>
 
                  </div>             
@@ -69,7 +69,7 @@ function MySwiper() {
 
               <div className='' >
                  {slide1.map((item)=>{
-                  return <div className='flex m-2 p-2 font-bold rounded-lg shadow-lg border border-blue-900  bg-blue-800 p-2'>
+                  return <div className='flex m-2 p-2 font-bold rounded-lg shadow-lg border border-blue-900  bg-blue-800 p-2 mb-[10px]'>
                     <FaRegHandPointRight size={20} /> 
                       
                     <p className='text-gray-100 text-base font-medium ml-2'>{item}</p>

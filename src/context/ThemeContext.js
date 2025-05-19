@@ -16,7 +16,7 @@ export const ThemeProvider = ({children})=>{
         }else{
             root.classList.remove("dark")
         }
-        localStorage.getItem("theme") //localstorage them re save korlam
+        localStorage.getItem("theme") //localstorage theme re save korlam
     },[theme])
     const toggleTheme=()=>{
         setTheme((prev)=>(prev==="light"?"dark":"light"))
@@ -27,4 +27,4 @@ export const ThemeProvider = ({children})=>{
         </ThemeContext.Provider>
      )
 }
-export const useTheme=()=>useContext(ThemeContext)
+export const useTheme=()=>useContext(ThemeContext);
