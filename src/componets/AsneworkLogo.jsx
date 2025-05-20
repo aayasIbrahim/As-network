@@ -1,4 +1,4 @@
-const ASNetworkLogo = () => {
+const ASNetworkLogo = ({scrolled}) => {
     return (
       <div className="flex items-center space-x-2 text-blue-600 font-bold text-2xl">
         {/* Icon (Optional: Can be replaced with SVG or React Icon) */}
@@ -8,8 +8,8 @@ const ASNetworkLogo = () => {
   
         {/* Logo Text */}
         <span className="tracking-wide font-bold text-blue-600 ">
-          <span className="text-white">AS</span>
-          <span className="text-white text-2xl">Network</span>
+          <span className={`${scrolled ?"text-black dark:text-white":"text-white"}`}>AS</span>
+          <span className={`text-2xl ${scrolled ?"text-black dark:text-white":"text-white"}`}>Network</span>
         </span>
       </div>
     );

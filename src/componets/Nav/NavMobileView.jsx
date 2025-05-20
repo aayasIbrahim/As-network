@@ -8,7 +8,7 @@ import { FaMoon } from "react-icons/fa6";
 import MobileMenu from './MobileMenu';
 import { useTheme } from "../../context/ThemeContext";
 
-function NavMobileView({toggleMenu,isOpen}) {
+function NavMobileView({toggleMenu,isOpen,scrolled}) {
    const {theme,toggleTheme}=useTheme()
  
   return (
@@ -21,8 +21,8 @@ function NavMobileView({toggleMenu,isOpen}) {
         
            </button>
        
-          <button onClick={toggleMenu} className='md:hidden text-2xl text-white '>
-         {isOpen? <RxCross2 size={30}/>: <MdOutlineMenu className='text-white 'size={30}  />}
+          <button onClick={toggleMenu} className={`md:hidden text-2xl dark:text-white ${ scrolled ? "text-black":"text-white"}`}>
+         {isOpen? <RxCross2 size={30}/>: <MdOutlineMenu  size={30}  />}
           </button>
           </div>
           {isOpen && (
