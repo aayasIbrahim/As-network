@@ -35,7 +35,7 @@ function NavBer() {
 
   const navItems = ["Home", "About", "Offer", "Coverge", "Pricing", "Pay Bill"];
   return (
-    <nav className={`navbar fixed w-full z-50 top-0 pt-0 lg:pb-1.5 md:pb-1.5 pb-0 lg:rounded-none md:rounded-none rounded-b-xl lg:border-none md:border-none border-b border-gray-700 lg:bg-[#00204f57] md:bg-[#00204f57] bg-[#00204fc1] dark:lg:bg-[#00204f57] dark:md:bg-[#00204f57] dark:bg-[#00204fc1] ${scrolled ? " bg-white" : "shadow-none"}`}>
+    <nav className={`navbar fixed w-full z-50 top-0 pt-0 lg:pb-1.5 md:pb-1.5 pb-0 lg:rounded md:rounded rounded-b-xl lg:border md:border border-b border-gray-700 md:border-gray-300 ${scrolled ? "bg-white":"lg:bg-[#00204f57] bg-[#00204fc1]"} dark:lg:bg-[#00204f57] dark:md:bg-[#00204f57] dark:bg-[#00204fc1] ${scrolled ? " bg-white md:bg-white" : ""}`}>
       <div className="container mx-auto  flex justify-between items-center w-full px-4 lg:px-10 md:px-10 py-2">
         <div>
           <ASNetworkLogo
@@ -58,12 +58,12 @@ function NavBer() {
               <li
                 className={`${
                   item === "Offer" &&
-                  "rounded-lg lg:px-1 md:px-0 px-0 lg:border text-base font-medium text-gray-200 hover:text-gray-400 lg:border-gray-500 lg:dark:border-gray-500  dark:text-gray-200 dark:hover:text-gray-100"
-                }`}
+                  "rounded-lg lg:px-1 md:px-0 px-0 lg:border text-base font-medium  lg:border-gray-500 lg:dark:border-gray-500  dark:text-gray-200 dark:hover:text-gray-100"
+                }` }
                 key={index}
               >
                 <a
-                  className="font-base font-medium text-gray-200 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-100 flex   m-4 "
+                  className={`font-base font-medium ${scrolled ? "text-black" : "text-white hover:text-gray-400"}  dark:text-gray-200 dark:hover:text-gray-100 flex m-4 `}
                   href="/jh"
                 >
                   {" "}
