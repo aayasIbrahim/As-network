@@ -16,7 +16,7 @@ const WhatsAppButton = () => {
 
   return (
     <a
-      href="https://wa.me/+8801857792946" // Replace with your number
+      href="https://wa.me/+8801842741174" // Replace with your number
       target="_blank"
       rel="noopener noreferrer"
      className={`
