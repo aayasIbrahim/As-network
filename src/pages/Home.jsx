@@ -4,7 +4,7 @@ import MySwiper from "../componets/slider/MySwiper";
 import Cards from "../componets/cards/Cards";
 import WhatsAppButton from "../componets/WhatsAppButton";
 import CallButton from "../componets/CallButton";
-// import Bannar from "../componets/Banner/Banner";
+
 
 function Home() {
   return (
