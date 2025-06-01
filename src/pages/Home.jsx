@@ -4,6 +4,7 @@ import MySwiper from "../componets/slider/MySwiper";
 import Cards from "../componets/cards/Cards";
 import WhatsAppButton from "../componets/WhatsAppButton";
 import CallButton from "../componets/CallButton";
+import Connect from "../componets/Connect";
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
       </div>
 
       <Cards />
+      <Connect/>
     </div>
   );
 }
