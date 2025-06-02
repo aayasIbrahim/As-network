@@ -5,6 +5,7 @@ import Cards from "../componets/cards/Cards";
 import WhatsAppButton from "../componets/WhatsAppButton";
 import CallButton from "../componets/CallButton";
 import Connect from "../componets/Connect";
+import Priceing from "../componets/Priceing";
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
 
       <Cards />
       <Connect/>
+      <Priceing/>
     </div>
   );
 }
