@@ -53,6 +53,11 @@ function Priceing() {
 
         </div>
       </div>
+      <div  className="flex justify-center items-center mt-12">
+        <a href="/"className="px-8 py-3 bg-blue-600 hover:bg-gray-900 dark:hover:bg-blue-700 transition-all text-white rounded-xl font-semibold">
+          View Other Packages
+        </a>
+      </div>
     </section>
   );
 }
