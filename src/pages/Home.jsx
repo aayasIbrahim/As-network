@@ -6,22 +6,19 @@ import WhatsAppButton from "../componets/WhatsAppButton";
 import CallButton from "../componets/CallButton";
 import Connect from "../componets/Connect";
 import Priceing from "../componets/Priceing";
-
+import CoveraAgeAria from "../componets/CoveraAgeAria";
 
 function Home() {
   return (
     <div className="dark:bg-gray-800 ">
       <NavBer />
-
       <MySwiper />
-      <div className="flex">
-        <WhatsAppButton />
-        <CallButton />
-      </div>
-
-      <Cards />
-      <Connect/>
-      <Priceing/>
+      <WhatsAppButton />
+      <CallButton />
+      <Cards /> 
+      <Connect />
+      <Priceing />
+      <CoveraAgeAria />
     </div>
   );
 }

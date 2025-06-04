@@ -1,7 +1,7 @@
 import React from "react";
 import Package from "./Package";
 
-function Priceing() {
+function Priceing() { 
   return (
     <section className="border-b-[1px] border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto lg:py-24 md:py-24 py-16 px-5 md:px-8 lg:pb-28">
@@ -24,37 +24,38 @@ function Priceing() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 mt-16"> 
-
-        <Package
-        level={"Gold+"}
-        bgcolor={" rgb(100, 116, 139)"}
-        Mbps={"60 Mbps"}
-        taka={"TK1500"}
-        />
-        <Package
-        level={"Platinum+"}
-        bgcolor={"#F8718C"}
-        Mbps={"70 Mbps"}
-        taka={"TK1260"}
-        />
-        <Package
-        level={"Diamond+"}
-        bgcolor={"#4f46e5"}
-        Mbps={"80 Mbps"}
-        taka={"TK1575"}
-        />
-        <Package
-        level={"Sapphire+"}
-        bgcolor={"#4b5563"}
-        Mbps={"100 Mbps"}
-        taka={"TK1575"}
-        />
-
+        <div className="grid grid-cols-1 gap-5 mt-16">
+          <Package
+            level={"Gold+"}
+            bgcolor={" rgb(100, 116, 139)"}
+            Mbps={"60 Mbps"}
+            taka={"TK1500"}
+          />
+          <Package
+            level={"Platinum+"}
+            bgcolor={"#F8718C"}
+            Mbps={"70 Mbps"}
+            taka={"TK1260"}
+          />
+          <Package
+            level={"Diamond+"}
+            bgcolor={"#4f46e5"}
+            Mbps={"80 Mbps"}
+            taka={"TK1575"}
+          />
+          <Package
+            level={"Sapphire+"}
+            bgcolor={"#4b5563"}
+            Mbps={"100 Mbps"}
+            taka={"TK1575"}
+          />
         </div>
       </div>
-      <div  className="flex justify-center items-center mt-12">
-        <a href="/"className="px-8 py-3 bg-blue-600 hover:bg-gray-900 dark:hover:bg-blue-700 transition-all text-white rounded-xl font-semibold">
+      <div className="flex justify-center items-center mt-12">
+        <a
+          href="/"
+          className="px-8 py-3 bg-blue-600 hover:bg-gray-900 dark:hover:bg-blue-700 transition-all text-white rounded-xl font-semibold"
+        >
           View Other Packages
         </a>
       </div>
