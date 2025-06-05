@@ -7,6 +7,7 @@ import CallButton from "../componets/CallButton";
 import Connect from "../componets/Connect";
 import Priceing from "../componets/Priceing";
 import CoveraAgeAria from "../componets/CoveraAgeAria";
+import Footer from "../componets/Footer/Footer";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <Connect />
       <Priceing />
       <CoveraAgeAria />
+      <Footer/>
     </div>
   );
 }
