@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayOut />}>
           <Route index element={<Home />} />
-          <Route path="/About" element={<About />} />
+          <Route path="About" element={<About />} />
         </Route>
       </Routes>
     </HashRouter>
