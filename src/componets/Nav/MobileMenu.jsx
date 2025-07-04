@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import NavButton from './NavButton';
 
 function MobileMenu({ scrolled}) {
@@ -8,20 +9,20 @@ function MobileMenu({ scrolled}) {
                 <ul className='flex   justify-center  items-center  space-x-[50px] text-center text-xl font-bold'>
                   <div className='space-y-5 text-base font-medium  '>
                 
-                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><a href="/">Home</a></li>
-                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><a href="/login">About</a></li>
-                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><a href="/signup">Offers <span className=" bg-red-600 h-3 w-3 rounded-full px-1.5 py-0.5 text-white text-xs ">1</span></a></li>
+                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><Link to="/">Home</Link></li>
+                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><Link to="/about">About</Link></li>
+                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><Link to="/offers">Offers <span className=" bg-red-600 h-3 w-3 rounded-full px-1.5 py-0.5 text-white text-xs ">1</span></Link></li>
                   </div >
                     <div className='space-y-5 text-base font-medium '>
-                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><a href="/about">Coverge</a></li>
-                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><a href="/contact">Pricing</a></li>
-                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><a href="/contact">Pay Bill</a></li>
+                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><Link to="/coverge">Coverge</Link></li>
+                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><Link to="/pricing">Pricing</Link></li>
+                    <li className='hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100'><Link to="/paybill">Pay Bill</Link></li>
                     </div>
                 </ul>
                 <div className='flex justify-center items-center space-x-6 mt-5 mb-5'>
                   <NavButton>Quick Pay</NavButton>
                   <NavButton>Safe Care</NavButton>
-                  <NavButton>ayas </NavButton>
+                
                   
 
                   

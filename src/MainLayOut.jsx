@@ -7,7 +7,7 @@ export default function MainLayOut() {
   return (
     <>
       <NavBer />
-      <main style={{ paddingTop: "60px", minHeight: "180vh" }}>
+      <main >
         <Outlet />
       </main>
       <Footer />
