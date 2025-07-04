@@ -1,25 +1,21 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import MainLayOut from "./MainLayOut";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import "./App.css";
 
-import Home from './pages/Home';
-import './App.css';
-import Login from './pages/Login';
-
-function App() {
+const App = () => {
   return (
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/login" element={<Login/>} />
-  
-  
-   </Routes>
-
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<MainLayOut />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   );
-}
+};
 
 export default App;
-
-
-// or
-
-

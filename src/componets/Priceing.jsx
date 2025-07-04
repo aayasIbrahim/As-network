@@ -49,6 +49,7 @@ function Priceing() {
             Mbps={"100 Mbps"}
             taka={"TK1575"}
           />
+
         </div>
       </div>
       <div className="flex justify-center items-center mt-12">

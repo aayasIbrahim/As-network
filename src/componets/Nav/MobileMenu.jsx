@@ -21,6 +21,7 @@ function MobileMenu({ scrolled}) {
                 <div className='flex justify-center items-center space-x-6 mt-5 mb-5'>
                   <NavButton>Quick Pay</NavButton>
                   <NavButton>Safe Care</NavButton>
+                  <NavButton>ayas </NavButton>
                   
 
                   

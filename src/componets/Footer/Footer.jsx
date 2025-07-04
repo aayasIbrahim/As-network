@@ -13,11 +13,14 @@ function Footer() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <FooterContent heading={"COMPANY"} link={arrayofCompany} />
             <FooterContent heading={"QUICK LINKS"} link={arrayofQuickLinks} />
-            <FooterContent heading={"SUPPORT"} link={arrayofSupport} />
+            <FooterContent heading={"SUPPORT"} link={arrayofSupport} /> 
             <FooterContent heading={"LEGAL"} link={arrayofLegal} />
           </div>
            <FooterForm/>
+       
+           
         </div>
+        
       </div>
     </footer>
   );

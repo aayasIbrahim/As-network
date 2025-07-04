@@ -9,7 +9,7 @@ import { BiNetworkChart } from "react-icons/bi";
 
 
 
-const cardData = [
+const cardData =  [ 
   {
     id: 1,
     icon:<IoHomeOutline/>,
