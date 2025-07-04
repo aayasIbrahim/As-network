@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../HeroSection'
+import HeroSection from '../componets/HeroSection.jsx'
 import Aboutimage from "../assets/about.webp"
 function About() {
   return (
