@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../componets/HeroSection.jsx";
-import coverImg from "../assets/coverage.jpg";
+import coverImg from "../assets/coverage-bg.webp";
 export default function Coverage() {
   return (
     <>
