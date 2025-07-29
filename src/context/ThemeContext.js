@@ -17,7 +17,7 @@ export const ThemeProvider = ({children})=>{
         }else{
             root.classList.remove("dark")
         }
-        localStorage.getItem("theme") //localstorage theme re save korlam
+        localStorage.getItem("theme",theme) //localstorage theme re save korlam ekne getItem (key,value) deserve kore
     },[theme])
     const toggleTheme=()=>{
         setTheme((prev)=>(prev==="light"?"dark":"light"))
