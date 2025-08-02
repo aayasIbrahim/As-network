@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
 
-function MobileMenu({ scrolled }) {
+function MobileMenu({ scrolled,toggleMenu }) {
   return (
     <>
       <div
@@ -13,13 +13,13 @@ function MobileMenu({ scrolled }) {
         <ul className="flex   justify-center  items-center  space-x-[50px] text-center text-xl font-bold">
           <div className="space-y-5 text-base font-medium  ">
             <li className="hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100">
-              <Link to="/">Home</Link>
+              <Link onClick={toggleMenu} to="/">Home</Link>
             </li>
             <li className="hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100">
-              <Link to="/about">About</Link>
+              <Link onClick={toggleMenu} to="/about">About</Link>
             </li>
             <li className="hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100">
-              <Link to="/offer">
+              <Link onClick={toggleMenu} to="/offer">
                 Offers{" "}
                 <span className=" bg-red-600 h-3 w-3 rounded-full px-1.5 py-0.5 text-white text-xs ">
                   1
@@ -29,18 +29,18 @@ function MobileMenu({ scrolled }) {
           </div>
           <div className="space-y-5 text-base font-medium ">
             <li className="hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100">
-              <Link to="/coverage">Coverge</Link>
+              <Link onClick={toggleMenu} to="/coverage">Coverge</Link>
             </li>
             <li className="hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100">
-              <Link to="/pricing">Pricing</Link>
+              <Link onClick={toggleMenu} to="/pricing">Pricing</Link>
             </li>
             <li className="hover:text-gray-400  dark:text-gray-200 dark:hover:text-gray-100">
-              <Link to="/paybill">Pay Bill</Link>
+              <Link onClick={toggleMenu} to="/paybill">Pay Bill</Link>
             </li>
           </div>
         </ul>
         <div className="flex justify-center items-center space-x-6 mt-5 mb-5">
-          <NavButton>Quick Pay</NavButton>
+          <NavButton >Quick Pay</NavButton>
           <NavButton>Safe Care</NavButton>
         </div>
         <div>

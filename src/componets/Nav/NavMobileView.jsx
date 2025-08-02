@@ -34,7 +34,7 @@ function NavMobileView({ toggleMenu, isOpen, scrolled }) {
             {isOpen ? <RxCross2 size={30} /> : <MdOutlineMenu size={30} />}
           </button>
         </div>
-        {isOpen && <MobileMenu scrolled={scrolled} />}
+        {isOpen && <MobileMenu scrolled={scrolled} toggleMenu={toggleMenu}/>}
       </div>
     </>
   );
